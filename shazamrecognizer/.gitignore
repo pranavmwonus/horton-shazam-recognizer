@@ -1,0 +1,4 @@
+/build
+
+# Exclude compiled libraries
+/src/main/jniLibs
