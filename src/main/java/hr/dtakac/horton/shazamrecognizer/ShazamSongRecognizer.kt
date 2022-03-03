@@ -22,6 +22,9 @@ class ShazamSongRecognizer @Inject constructor(
     private val shazamFingerprintGenerator: ShazamFingerprintGenerator,
     private val dispatcherProvider: DispatcherProvider
 ) : SongRecognizer {
+    override val sampleDuration: Duration =
+        Duration.ofSeconds(5L)
+
     override suspend fun recognize(songFilePath: String): Result<RecognizedSong> {
         val fingerprintData = try {
             withContext(dispatcherProvider.compute) {
