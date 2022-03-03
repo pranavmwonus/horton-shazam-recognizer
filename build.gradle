@@ -38,17 +38,13 @@ dependencies {
     implementation project(':domain')
 
     // Coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines_android}"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines_android}"
 
     // Network
-    implementation "com.google.code.gson:gson:$versions.gson"
-    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
-    implementation "com.squareup.retrofit2:converter-gson:$versions.retrofit"
-    implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttp"
-
-    // Dependency injection
-    implementation "com.google.dagger:hilt-android:$versions.dagger"
-    kapt "com.google.dagger:hilt-compiler:$versions.dagger"
+    api "com.google.code.gson:gson:$versions.gson"
+    api "com.squareup.retrofit2:retrofit:$versions.retrofit"
+    api "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+    api "com.squareup.okhttp3:logging-interceptor:$versions.okhttp"
 
     // Core library desugaring
     coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:$versions.core_library_desugaring"
