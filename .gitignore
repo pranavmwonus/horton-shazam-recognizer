@@ -1,4 +1,7 @@
 /build
+/.gradle
+/.idea
+/local.properties
 
 # Exclude compiled libraries
 /src/main/jniLibs
